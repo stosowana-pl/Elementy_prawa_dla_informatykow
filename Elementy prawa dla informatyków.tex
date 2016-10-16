@@ -1,0 +1,456 @@
+\documentclass[12pt,a4paper]{article}
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% This is a simple template for a LaTeX document using the "article" class.
+% See "book", "report", "letter" for other types of document.
+
+
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+\usepackage{mathtools}
+%% Examples of Article customizations
+% These packages are optional, depending whether you want the features they provide.
+% See the LaTeX Companion or other references for full information.
+
+%% PAGE DIMENSIONS
+\usepackage[margin=0.5in]{geometry} % to change the page dimensions
+\geometry{a4paper} % or letterpaper (US) or a5paper or....
+% \geometry{margin=2in} % for example, change the margins to 2 inches all round
+% \geometry{landscape} % set up the page for landscape
+%   read geometry.pdf for detailed page layout information
+
+\usepackage{graphicx} % support the \includegraphics command and options
+\usepackage{amsfonts}
+% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage[shortlabels]{enumitem}
+\setlist[enumerate]{itemsep=0mm}
+\setlist[itemize]{itemsep=0mm}
+%% PACKAGES
+\usepackage{listings}
+%\usepackage{color}
+
+\usepackage[OT4]{fontenc}
+\usepackage[polish]{babel}
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+%\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+% These packages are all incorporated in the memoir class to one degree or another...
+
+%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0pt} % customise the layout...
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+\usepackage{titling }
+
+%% SECTION TITLE APPEARANCE
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+%% ToC (table of contents) APPEARANCE
+\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+
+%opening
+\title{Elementy prawa dla informatyków}
+%\posttitle{\par\end{center}}
+\author{}
+%\date{}
+\date{\vspace{-10ex}}
+\begin{document}
+
+\maketitle
+
+\section{2014/2015}
+\subsection{Zakres materiału}
+Na kolokwium proszę przygotować problematykę ochrony prawnej programów komputerowych w świetle:
+\begin{itemize}
+\item polskiej ustawy o prawie autorskim i prawach pokrewnych
+\item  Dyrektywy Parlamentu Europejskiego i Rady z dnia 23 kwietnia 2009 r. 2009/24/WE (najlepiej, w przypadku prawa Unii Europejskiej zapoznać się z kilkoma wersjami językowymi, przynajmniej z dwoma)
+\item porozumienia TRIPS.
+\end{itemize}
+Ten temat jest dość szeroki, obejmuje:
+\begin{itemize}
+\item warunki ochrony (ogólna problematyka utworu), ogólne zasady dotyczące ochrony praw autorskich,
+\item kwestię utworu pracowniczego
+\item różnice między ochroną praw do programów komputerowych i innych utworów.
+\end{itemize} 
+
+\subsubsection{Problematyka utworu}
+\textbf{Utwór}
+\begin{itemize}
+\item każdy przejaw działalności twórczej
+	\begin{itemize}
+	\item indywidualny charakter
+	\item ustalony w jakiejkolwiek postaci
+	\item niezależnie od wartości, przeznaczenia i sposobu wyrażenia
+	\end{itemize}
+\item pomimo powyższego liczy się efekt, a nie przebieg procesu tworzenia
+\item brak domniemania twórczego efektu działalności człowieka
+\item konwencja berneńska $\rightarrow$ ochrona końcowego przedmiotu działalności, istotne jest to co zrobimy	
+\item luźna definicja utworu - ,,Coś co zrobimy i ma wyraźne cechy indywidualnośći''
+\end{itemize}
+\noindent
+\textbf{Typy utworów:}
+\begin{enumerate}
+\item wyrażone słowem,  symbolami  matematycznymi,  znakami graficznymi (literackie,  publicystyczne,  naukowe,  kartograficzne  oraz  programy  komputerowe); 
+\item plastyczne; 
+\item fotograficzne; 
+\item lutnicze; 
+\item wzornictwa przemysłowego; 
+\item architektoniczne, architektoniczno-urbanistyczne i urbanistyczne; 
+\item muzyczne i słowno-muzyczne; 
+\item sceniczne, sceniczno-muzyczne, choreograficzne i pantomimiczne; 
+\item audiowizualne (w tym filmowe). 
+\end{enumerate}
+\noindent
+\textbf{Artykuł 2}
+\begin{enumerate}
+\item[$2^1$.] Ochroną  objęty  może  być  wyłącznie  sposób  wyrażenia;  nie  są  objęte  ochroną odkrycia,  idee,  procedury,  metody  i  zasady  działania  oraz  koncepcje  matema- tyczne. 
+\item[$3$.] Utwór jest przedmiotem prawa autorskiego od chwili ustalenia, chociażby miał postać nieukończoną. 
+\item[$4$.] Ochrona przysługuje twórcy niezależnie od spełnienia jakichkolwiek formalności. 
+\end{enumerate}
+\noindent
+\textbf{Artykuł 4}
+\begin{itemize}
+\item Nie stanowią przedmiotu prawa autorskiego: 
+	\begin{enumerate}
+		\item akty normatywne lub ich urzędowe projekty; 
+		\item urzędowe dokumenty, materiały, znaki i symbole; 
+		\item opublikowane opisy patentowe lub ochronne; 
+		\item proste informacje prasowe. 
+	\end{enumerate}
+\end{itemize} 
+
+\noindent
+\textbf{Rodzaje utworów}
+\begin{itemize}
+\item Samoistne - ,,w pełni'' nieinspirowane cudzym dziełem
+\item Samoistne inspirowane
+\item Niesamoistne
+	\begin{itemize}
+		\item utwory współautorskie (programy)
+		\item utwory zbiorowe
+		\item utwory zależne (zależą od twórcy utworu pierwotnego, należy wymienić jego i tytuł utworu)
+			\begin{itemize}
+				\item adaptacje
+				\item opracowania
+				\item przeróbki
+			\end{itemize}
+		\item utwory z zapożyczeniami (przekraczającymi dozwolony użytek) 
+	\end{itemize}
+\end{itemize}
+\noindent
+\textbf{Co musimy wykazać w sądzie, gdy ktoś pogwałci nasze prawa autorskie}
+\begin{itemize}
+\item że coś jest utworem
+\item że mamy do niego prawa
+\item że prawa zostały naruszone
+\end{itemize}
+
+\subsubsection{Utwór pracowniczy}
+\textbf{Artykuł 12}
+\begin{enumerate}
+\item Jeżeli ustawa lub umowa o pracę nie stanowią inaczej, pracodawca, którego pracownik stworzył utwór w wyniku wykonywania obowiązków ze stosunku pracy, nabywa z chwilą przyjęcia utworu autorskie prawa majątkowe w granicach wynikających z celu umowy o pracę i zgodnego zamiaru stron. 
+\item Jeżeli pracodawca, w okresie dwóch lat od daty przyjęcia utworu, nie przystąpi do rozpowszechniania utworu przeznaczonego w umowie o pracę do rozpowszechnienia, twórca może wyznaczyć pracodawcy na piśmie odpowiedni termin na rozpowszechnienie utworu z tym skutkiem, że po jego bezskutecznym upływie prawa uzyskane  przez  pracodawcę  wraz  z  własnością  przedmiotu,  na  którym  utwór utrwalono, powracają do twórcy, chyba że umowa stanowi inaczej. Strony mogą określić inny termin na przystąpienie do rozpowszechniania utworu. 
+\item Jeżeli umowa o pracę nie stanowi inaczej, z chwilą przyjęcia utworu pracodawca nabywa własność przedmiotu, na którym utwór utrwalono. 
+\end{enumerate}
+\textbf{Artykuł 13}
+\begin{itemize}
+\item Jeżeli pracodawca nie zawiadomi twórcy w terminie sześciu miesięcy od dostarczenia utworu o jego nieprzyjęciu lub uzależnieniu przyjęcia od dokonania określonych zmian w wyznaczonym w tym celu odpowiednim terminie, uważa się, że utwór został przyjęty bez zastrzeżeń. Strony mogą określić inny termin. 
+\end{itemize}
+\textbf{Artykuł 74 ustęp 3}
+\begin{itemize}
+\item \textbf{Prawa majątkowe} do programu komputerowego stworzonego przez \textbf{pracownika w wyniku wykonywania obowiązków ze stosunku pracy} przysługują \textbf{pracodawcy}, o ile umowa nie stanowi inaczej. 
+\end{itemize}
+
+%Patrz też~\nameref{utworprac} -  % \ref{utworprac}
+
+\subsubsection{Ochrona programów komputerowych a innych utworów}
+
+\textbf{Programy a patenty}:
+\begin{itemize}
+\item Programu nie można opatentować. Algorytm tak, ale musi mieć charakter przemysłowy?
+\item Można opatentować wynalazek, którego integralną częścią jest program komputerowy $\rightarrow$ musi to być techniczny wynalazek?
+\end{itemize}
+\noindent
+\textbf{Programy komputerowe:}
+\begin{itemize}
+\item Warunek uznania programu za utwór - ,,przejaw działalności twórczej o indywidualnym charakterze''
+	\begin{itemize}
+		\item Funkcjonalny cel programów komputerowych ogranicza swobodę twórczą
+	\end{itemize}
+\item Ochrona niezależna od sposobu wyrażenia (kod źródłowy, kod maszynowy, znajdujący się w notatkach, dokumentacji projektowej, użytkowej)
+	\begin{itemize}
+		\item Dokumentacja jako taka nie jest uważana za program komputerowy (jest to ,,utwór literacki'')
+	\end{itemize}
+\end{itemize}
+Koncepcje, pomysły i idee nie są chronione.
+\begin{center}
+\begin{tabularx}{\textwidth}{|X|X|}
+\hline
+\textbf{Elementy chronione} & \textbf{Elementy niechronione}\\
+\hline
+Konkretny ciąg instrukcji (kod źródłowy), elementy tekstowe programu & Algorytm, język programowania (elementy pozatekstowe) \\
+\hline
+Formę utworu (sposób wyrażenia) & Treść (idea, pomysł)\\
+\hline
+\end{tabularx}
+\end{center}
+\noindent
+\textbf{Problem skutków zakresu ochrony}
+\begin{itemize}
+\item Wykluczenie ochrony logiki, układu, struktury programu umożliwia wykorzystywanie czyjegoś dorobku
+	\subitem * Argument zarówno za, jak i przeciw
+\item Ochrona układów, struktury programu, procesów wykorzystywanych przez program zbliżałaby się do ochrony patentowej
+\end{itemize}
+\noindent
+\textbf{Szerszy zakres praw majątkowych niż w przypadku innych utworów:}
+\begin{itemize}
+\item wyłączne prawo wprowadzania zmian
+\item określenie granic dekompilacji i wykorzystywania jej wyników
+\item wykluczenie dozwolonego użytku osobistego
+\item wykluczenie ...
+\end{itemize}
+\noindent
+\textbf{Autorskie prawa osobiste}
+\begin{itemize}
+\item prawo do autorstwa
+\item prawo do oznaczania utworu swoim nazwiskiem lub pseudonimem albo udostępnienia go anonimowo
+\item wykluczone są inne prawa osobiste (art. 16 ust. 3-5 p.a) t.j do:
+	\begin{itemize}
+		\item nienaruszalności treści i formy utworu oraz jego rzetelnego wykorzystania
+		\item decydowania o pierwszym udostępnieniu utworu publiczności
+		\item nadzoru nad sposobem korzystania z utworu
+	\end{itemize}
+\end{itemize}
+
+Patrz też \nameref{ochronapr}
+
+\section{2013/2014}
+\subsection{Zakres materiału}
+\begin{itemize}
+	\item norma prawna, ochrona autorska itp.
+	\item dozwolony użytek
+	\item umowy przenoszące autorskie prawa majątkowe i licencyjne
+	\item zasady ochrony programów komputerowych
+\end{itemize}
+
+\subsection{Pytania}
+3 pytania, po każdym pytaniu około 10 minut na odpowiedź zanim dyktowała następne.
+
+\subsubsection{Umowy o przeniesienie praw majątkowych a umowy licencyjne}
+\textbf{Artykuł 41}
+\begin{enumerate}
+\item Jeżeli ustawa nie  stanowi inaczej:
+	\begin{enumerate}
+		\item  \textbf{autorskie prawa majątkowe} mogą przejść na inne osoby w drodze dziedziczenia lub na \textbf{podstawie umowy};
+		\item nabywca autorskich praw majątkowych może \textbf{przenieść je na inne osoby}, chyba że umowa stanowi inaczej.
+	\end{enumerate}
+\item Umowa o przeniesienie autorskich praw majątkowych lub umowa o korzystanie
+z utworu, zwana dalej ,,\textbf{licencją}'', obejmuje \textbf{pola eksploatacji} wyraźnie w niej wymienione
+\item Nieważna jest umowa w części dotyczącej wszystkich utworów lub wszystkich utworów określonego rodzaju tego samego twórcy mających powstać w przyszłości.
+\item  Umowa może dotyczyć tylko \textbf{pól eksploatacji}, które są \textbf{znane w chwili jej zawarcia}
+\item ...% Twórca utworu wykorzystanego lub włączonego do utworu audiowizualnego oraz utworu wchodzącego w skład utworu zbiorowego, po powstaniu nowych sposobów eksploatacji utworów, nie może bez ważnego powodu odmówić udzielenia zezwolenia na korzystanie z tego utworu w ramach utworu audiowizualnego lub utworu zbiorowego na polach eksploatacji nieznanych w chwili zawarcia umowy.
+\end{enumerate}
+\textbf{Artykuł 45}
+\begin{itemize}
+\item Jeżeli umowa nie stanowi inaczej, twórcy przysługuje odrębne wynagrodzenie za korzystanie z utworu na \textbf{każdym odrębnym polu eksploatacji}.
+\end{itemize}
+\textbf{Artykuł 50}
+\begin{itemize}
+\item \textbf{Odrębne pola eksploatacji} stanowią w szczególności:
+\begin{enumerate}
+\item w zakresie utrwalania i zwielokrotniania utworu – wytwarzanie określoną
+techniką egzemplarzy utworu, w tym techniką drukarską, reprograficzną,
+zapisu magnetycznego oraz techniką cyfrową;
+\item w zakresie obrotu oryginałem albo egzemplarzami, na których utwór utrwalono – wprowadzanie do obrotu, użyczenie lub najem oryginału albo egzemplarzy;
+\item w zakresie rozpowszechniania utworu w sposób inny niż określony w pkt 2 – publiczne wykonanie, wystawienie, wyświetlenie, odtworzenie oraz nadawanie i reemitowanie, a także publiczne udostępnianie utworu w taki sposób, aby każdy mógł mieć do niego dostęp w miejscu i w czasie przez siebie wybranym.
+\end{enumerate}
+\end{itemize}
+\textbf{Artykuł 53}
+\begin{itemize}
+\item Umowa o przeniesienie autorskich praw majątkowych \textbf{wymaga zachowania formy pisemnej} pod rygorem nieważności.
+\end{itemize}
+\textbf{Artykuł 57}
+\begin{enumerate}
+\item Jeżeli nabywca \textbf{autorskich praw majątkowych} lub \textbf{licencjobiorca}, który \textbf{zobowiązał się do rozpowszechniania utworu}, nie przystąpi do rozpowszechniania w umówionym terminie, a w jego braku – w ciągu dwóch lat od przyjęcia utworu, \textbf{twórca może odstąpić od umowy lub ją wypowiedzieć} i domagać się naprawienia szkody po bezskutecznym upływie dodatkowego terminu, nie krótszego niż sześć miesięcy.
+\end{enumerate}
+\textbf{Artykuł 58}
+\begin{itemize}
+\item Jeżeli publiczne \textbf{udostępnienie utworu następuje w nieodpowiedniej formie albo ze zmianami, którym twórca mógłby słusznie się sprzeciwić}, może on po bezskutecznym wezwaniu do zaniechania naruszenia\textbf{ odstąpić od umowy lub ją wypowiedzieć}. Twórcy przysługuje prawo do wynagrodzenia określonego umową.
+\end{itemize}
+\textbf{Artykuł 64}
+\begin{itemize}
+\item Umowa zobowiązująca do przeniesienia \textbf{autorskich praw majątkowych} przenosi na nabywcę, z chwilą przyjęcia utworu, \textbf{prawo do wyłącznego korzystania z utworu na określonym w umowie polu eksploatacji}, chyba że postanowiono w niej inaczej.
+\end{itemize}
+\textbf{Artykuł 65}
+\begin{itemize}
+\item W \textbf{braku wyraźnego postanowienia o przeniesieniu prawa}, uważa się, że twórca udzielił \textbf{licencji}.
+\end{itemize}
+\textbf{Artykuł 66}
+\begin{enumerate}
+\item Umowa licencyjna uprawnia do korzystania z utworu w okresie \textbf{pięciu lat} na terytorium państwa, w którym licencjobiorca ma swoją siedzibę, chyba że w umowie postanowiono inaczej
+\item Po upływie terminu, o którym mowa w ust. 1, prawo uzyskane na podstawie umowy licencyjnej wygasa
+\end{enumerate}
+\textbf{Artykuł 67}
+\begin{enumerate}
+\item ...
+\item Jeżeli umowa nie zastrzega wyłączności korzystania z utworu w określony sposób (\textbf{licencja wyłączna}), udzielenie licencji nie ogranicza udzielenia przez twórcę upoważnienia innym osobom do korzystania z utworu na tym samym polu eksploatacji (\textbf{licencja niewyłączna}).
+\item Jeżeli umowa nie stanowi inaczej, \textbf{licencjobiorca nie może upoważnić innej osoby do korzystania z utworu} w zakresie uzyskanej licencji.
+\item Jeżeli umowa nie stanowi inaczej, uprawniony z licencji wyłącznej może dochodzić roszczeń z tytułu naruszenia autorskich praw majątkowych, w zakresie objętym umową licencyjną.
+\item Umowa licencyjna \textbf{wyłączna wymaga zachowania formy pisemnej} pod rygorem nieważności.
+\end{enumerate}
+\textbf{Artykuł 68}
+\begin{enumerate}
+\item Jeżeli umowa nie stanowi inaczej, a licencji udzielono na czas nieoznaczony, twórca może ją wypowiedzieć z zachowaniem terminów umownych, a w ich braku na rok naprzód, na koniec roku kalendarzowego.
+\item Licencję udzieloną na okres dłuższy niż pięć lat uważa się, po upływie tego terminu, za udzieloną na czas nieoznaczony
+\end{enumerate}
+\subsubsection{Dozwolony użytek}
+\begin{itemize}
+\item Dozwolony użytek dla programów komputerowych poza prawem cytatu jest wykluczony?
+	\begin{description}
+		\item [Artykuł 29.1] - Wolno przytaczać w utworach stanowiących samoistną całość urywki rozpowszechnionych utworów lub drobne utwory w całości, w zakresie uzasadnionym wyjaśnianiem, analizą krytyczną, nauczaniem lub prawami gatunku twórczości.
+	\end{description}
+\item Kopia zapasowa
+\item Black-box analysis (testy funkcjonalne?)
+\end{itemize}
+\textbf{Poza zakresem dozwolonego użytku:}
+\begin{itemize}
+\item użytek osobisty (\textbf{Artykuł 23})
+	\begin{itemize}
+		 \item  Bez zezwolenia twórcy wolno nieodpłatnie korzystać z już rozpowszechnionego 		utworu w zakresie własnego użytku osobistego. Przepis ten nie upoważnia do budowania 		według cudzego utworu architektonicznego i architektoniczno urbanistycznego 		oraz do korzystania z elektronicznych baz danych spełniających 		cechy utworu, chyba że dotyczy to własnego użytku naukowego niezwiązanego z 		celem zarobkowym.
+		 \item Zakres własnego użytku osobistego obejmuje korzystanie z pojedynczych egzemplarzy 		utworów przez krąg osób pozostających w związku osobistym, w szczególności 		pokrewieństwa, powinowactwa lub stosunku towarzyskiego.
+	\end{itemize}
+\item przejściowe lub incydentalne zwielokrotnienie (\textbf{Artykuł $23^1$})
+	\begin{itemize}
+		\item Nie wymaga zezwolenia twórcy przejściowe lub incydentalne zwielokrotnianie 		utworów, niemające samodzielnego znaczenia gospodarczego, a stanowiące integralną 		i podstawową część procesu technologicznego oraz mające na celu wyłącznie umożliwienie:
+		\begin{enumerate}
+				\item przekazu utworu w systemie teleinformatycznym pomiędzy osobami trzecimi 		przez pośrednika lub
+				\item zgodnego z prawem korzystania z utworu
+		\end{enumerate}
+	\end{itemize}
+\item wykorzystywanie przez instytucje naukowe, biblioteki, ośrodki informacji (\textbf{Artykuł 27, 28})
+	\begin{description}
+		\item[Artykuł 27] - Instytucje naukowe i oświatowe mogą, w celach dydaktycznych lub prowadzenia własnych badań, korzystać z rozpowszechnionych utworów w oryginale i w tłumaczeniu oraz sporządzać w tym celu egzemplarze fragmentów rozpowszechnionego utworu.
+		\item[Artykuł 28] - Biblioteki, archiwa i szkoły mogą:
+			\begin{enumerate}
+					\item udostępniać nieodpłatnie, w zakresie swoich zadań statutowych, egzemplarze 				utworów rozpowszechnionych;
+					\item sporządzać lub zlecać sporządzanie egzemplarzy rozpowszechnionych 				utworów w celu uzupełnienia, zachowania lub ochrony własnych zbiorów;
+					\item udostępniać zbiory dla celów badawczych lub poznawczych za pośrednictwem 				końcówek systemu informatycznego (terminali) znajdujących się na 				terenie tych jednostek.
+			\end{enumerate}
+	\end{description}
+\item wykorzystywanie dla dobra niepełnosprawnych (\textbf{artykuł $33^1$})
+	\begin{itemize}
+		\item Wolno korzystać z już rozpowszechnionych utworów dla dobra osób niepełnosprawnych, jeżeli to korzystnie odnosi się bezpośrednio do ich upośledzenia, nie ma zarobkowego charakteru i jest podejmowane w rozmiarze wynikającym z natury upo- śledzenia.
+	\end{itemize}
+\end{itemize}
+\subsubsection{Ochrona programów komputerowych} \label{ochronapr}
+\textbf{Artykuł 74}
+\begin{enumerate}
+\item Programy komputerowe podlegają ochronie jak utwory literackie, o ile przepisy niniejszego rozdziału nie stanowią inaczej.
+	\begin{itemize}
+		\item Celem takiego przepisu była możliwość zastosowania konwencji berneńskiej o ochronie dzieł literackich i artystycznych, istnieją faktyczne odmienności między ochroną dzieł literackich i programów komputerowych
+	\end{itemize}
+\item \textbf{Ochrona} przyznana programowi komputerowemu obejmuje \textbf{wszystkie formy jego wyrażenia}. \textbf{Idee i zasady} będące podstawą jakiegokolwiek elementu programu komputerowego, w tym podstawą łączy, \textbf{nie podlegają ochronie}.
+\item \textbf{Prawa majątkowe} do programu komputerowego stworzonego przez \textbf{pracownika w wyniku wykonywania obowiązków ze stosunku pracy} przysługują \textbf{pracodawcy}, o ile umowa nie stanowi inaczej. \label{utworprac} 
+\item \textbf{Autorskie prawa majątkowe} do programu komputerowego, z zastrzeżeniem przepisów art. 75 ust. 2 i 3, obejmują prawo do:
+	\begin{enumerate}[1.]
+		\item \textbf{trwałego lub czasowego zwielokrotnienia programu komputerowego} w całości lub w części jakimikolwiek środkami i w jakiejkolwiek formie; w zakresie, w którym dla wprowadzania, wyświetlania, stosowania, przekazywania i przechowywania programu komputerowego niezbędne jest jego zwielokrotnienie, czynności te wymagają zgody uprawnionego;
+		\item tłumaczenia, przystosowywania, zmiany układu lub jakichkolwiek innych zmian w programie komputerowym, z zachowaniem praw osoby, która tych zmian dokonała; (przykłady)
+			\begin{itemize}
+			 	\item  ,,zwykłe'' korzystanie z programu
+				\item poprawianie błędów
+				\item testowanie programów (np. żeby sprawdzić, czy nie ma wirusów)
+				\item zmienianie programu w zakresie dostosowywania do nowych wymagań
+			\end{itemize}
+		\item \textbf{rozpowszechniania}, w tym użyczenia lub najmu, programu komputerowego lub jego kopii.
+	\end{enumerate}
+\end{enumerate}
+\textbf{Artykuł 75}
+\begin{enumerate}
+\item Jeżeli umowa nie stanowi inaczej, czynności wymienione w art. 74 ust. 4 pkt 1 i 2 nie wymagają zgody uprawnionego, jeżeli są niezbędne do korzystania z programu komputerowego zgodnie z jego przeznaczeniem, w tym do poprawiania błędów przez osobę, która legalnie weszła w jego posiadanie.
+\item Nie wymaga zezwolenia uprawnionego:
+    \begin{enumerate}[1)]
+        \item \textbf{sporządzenie kopii zapasowej}, jeżeli jest to niezbędne do korzystania z programu komputerowego. Jeżeli umowa nie stanowi inaczej, kopia ta nie może być używana równocześnie z programem komputerowym;
+        \item\textbf{ obserwowanie, badanie i testowanie funkcjonowania} programu komputerowego w celu poznania jego idei i zasad przez osobę posiadającą prawo korzystania z egzemplarza programu komputerowego, jeżeli, będąc do tych czynności upoważniona, dokonuje ona tego w trakcie \textbf{wprowadzania, wyświetlania, stosowania, przekazywania lub przechowywania} programu komputerowego;
+        \item \textbf{zwielokrotnianie kodu lub tłumaczenie jego formy} w rozumieniu art. 74 ust. 4 pkt 1 i 2, jeżeli \textbf{jest to niezbędne do uzyskania informacji koniecznych do osiągnięcia współdziałania niezależnie stworzonego programu komputerowego z innymi programami komputerowymi}, o ile zostaną spełnione następujące warunki:
+            \begin{enumerate}[a)]
+                \item czynności te dokonywane są przez \textbf{licencjobiorcę} lub inną osobę uprawnioną do korzystania z egzemplarza programu komputerowego bądź przez inną osobę działającą na ich rzecz,
+                \item informacje niezbędne do osiągnięcia współdziałania \textbf{nie były uprzednio łatwo dostępne} dla osób, o których mowa pod lit. a,
+                \item czynności te odnoszą się do tych części oryginalnego programu komputerowego, które są \textbf{niezbędne do osiągnięcia współdziałania}.
+            \end{enumerate}
+\item Informacje, o których mowa w ust. 2 pkt 3, nie mogą być:
+    \begin{enumerate}[1)]
+        \item wykorzystane do innych celów niż osiągnięcie współdziałania niezależnie         stworzonego programu komputerowego;
+        \item  przekazane innym osobom, chyba że jest to niezbędne do osiągnięcia         współdziałania niezależnie stworzonego programu komputerowego
+        \item wykorzystane do rozwijania, wytwarzania lub wprowadzania do obrotu programu         komputerowego o istotnie podobnej formie wyrażenia lub do innych         czynności naruszających prawa autorskie.
+        \end{enumerate}
+	\end{enumerate}
+\end{enumerate}
+\textbf{Artykuł $77^1$}
+\begin{itemize}
+\item Uprawniony może domagać się od użytkownika programu komputerowego zniszczenia posiadanych przez niego środków technicznych (w tym programów komputerowych), których jedynym przeznaczeniem jest ułatwianie niedozwolonego usuwania lub obchodzenia technicznych zabezpieczeń programu 
+	\begin{itemize}
+		\item Praktyczne znaczenie tego przepisu nie jest zbyt wielkie
+	\end{itemize}
+\end{itemize}
+\textbf{Artykuł 7 Dyrektywy Parlamentu Europejskiego i Rady 2009/24/WE z dnia 23 kwietnia 2009 r. 
+w sprawie ochrony prawnej programów komputerowych}
+\begin{enumerate}
+\item Bez uszczerbku dla przepisów art. 4, 5 i 6 państwa członkowskie zapewniają zgodnie z ich ustawodawstwem  krajowym  właściwe  środki  w  stosunku  do  osoby  dopuszczającej  się któregokolwiek z następujących czynów: 
+	\begin{enumerate}
+		\item  każda czynność wprowadzania do obrotu kopii programu komputerowego, jeśli dana osoba wiedziała lub miała podstawy do przyjęcia, że jest to kopia nielegalna; 
+		\item posiadanie  do  celów  komercyjnych  kopii  programu  komputerowego,  jeśli  dana  osoba wiedziała lub miała podstawy do przyjęcia, że jest to kopia nielegalna; 
+		\item  każda czynność wprowadzenia do obrotu lub posiadanie do celów komercyjnych wszelkich środków,  których  jedynym  przeznaczeniem  jest ułatwienie  niedozwolonego  usuwania  lub obchodzenia  jakichkolwiek  urządzeń  technicznych,  które  mogłyby  zostać  zastosowane  do ochrony programu komputerowego. 
+	\end{enumerate}
+\item Każda  nielegalna  kopia  programu  komputerowego  podlega  konfiskacie,  zgodnie  z ustawodawstwem danego państwa członkowskiego.
+\item Państwa członkowskie mogą przewidzieć konfiskatę jakichkolwiek środków określonych 
+w ust. 1 lit. c).
+\end{enumerate}
+\subsubsection{Co to jest utwór zależny i czy program komputerowy może nim być}
+\textbf{Artykuł 2}
+\begin{enumerate}
+\item Opracowanie cudzego utworu, w szczególności tłumaczenie, przeróbka, adaptacja, jest przedmiotem prawa autorskiego bez uszczerbku dla prawa do utworu pierwotnego.
+\item Rozporządzanie i korzystanie z opracowania zależy od zezwolenia twórcy utworu pierwotnego (prawo zależne), chyba że autorskie prawa majątkowe do utworu pierwotnego wygasły. W przypadku baz danych spełniających cechy utworu zezwolenie twórcy jest konieczne także na sporządzenie opracowania.
+\item Twórca utworu pierwotnego może cofnąć zezwolenie, jeżeli w ciągu pięciu lat od jego udzielenia opracowanie nie zostało rozpowszechnione. Wypłacone twórcy wynagrodzenie nie podlega zwrotowi.
+\item Za opracowanie nie uważa się utworu, który powstał w wyniku inspiracji cudzym utworem.
+\item Na egzemplarzach opracowania należy wymienić twórcę i tytuł utworu pierwotnego.
+\end{enumerate}
+\textbf{Utwory zależne} - zależą od twórcy utworu pierwotnego, należy wymienić jego i tytuł utworu
+\begin{itemize}
+\item Rozporządzanie i korzystanie z opracowania zależy od zezwolenia twórcy utworu pierwotnego (chyba, że wygasły)
+\item Zezwolenie nie jest potrzebne na sporządzenie opracowania
+\item  Podsumowując - podjęcie inicjatywy twórczej  nie wymaga zgody twórcy utworu pierwotnego, jednak czerpanie jakichkolwiek korzyści z utworu zależnego jest niemożliwe do czasu uzyskania zgody autora utworu pierwotnego
+\item Utworem zależnym nie jest utwór inspirowany cudzym utworem.
+\end{itemize}
+\textbf{Przykłady utworów zależnych:}
+\begin{itemize}
+\item adaptacje
+\item opracowania
+\item przeróbki
+\end{itemize}
+\href{http://www.experto24.pl/prawo-prywatne/prawo-autorskie/prawo-do-korzystania-z-opracowania-programu-komputerowego.html}{Jakiś przykład z internetu:}
+\begin{quote}
+,,Zgodnie z ustawą, w przypadku baz danych spełniających cechy utworu zezwolenie twórcy jest konieczne także na sporządzenie opracowania. Tym samym nie można, bez jego zgody, dokonać na przykład tłumaczenia kodu programu komputerowego na inny język programowania. Wyjściem mógłby być utwór inspirowany, którego prawo autorskie nie traktuje jak opracowania.
+\paragraph{}
+Należy również pamiętać, iż uzyskanie zgody na opracowanie bazy danych lub programu komputerowego nie jest równoznaczne z udzieleniem zgody na korzystanie i rozporządzanie opracowaniem. Mamy tu zatem do czynienia z sytuacją, w której twórca utworu pierwotnego musi wyrazić "podwójną zgodę" – najpierw na dokonanie opracowania, a następnie na jego eksploatację przez twórcę zależnego. Oczywiście możliwe jest, przy odpowiednim sformułowaniu, uzyskanie zgody zarówno na opracowanie, jak i rozporządzanie.''
+\end{quote}
+\textbf{Utwory współautorskie (artykuł 9)}
+\begin{enumerate}
+\item Współtwórcom przysługuje prawo autorskie wspólnie. Domniemywa się, że wielkości udziałów są równe. Każdy ze współtwórców może żądać określenia wielkości udziałów przez sąd, na podstawie wkładów pracy twórczej.
+\item Każdy ze współtwórców może wykonywać prawo autorskie do swojej części utworu mającej samodzielne znaczenie, bez uszczerbku dla praw pozostałych współtwórców.
+\item Do wykonywania prawa autorskiego do całości utworu potrzebna jest zgoda wszystkich współtwórców. W przypadku braku takiej zgody każdy ze współtwórców może żądać rozstrzygnięcia przez sąd, który orzeka uwzględniając interesy wszystkich współtwórców.
+\item Każdy ze współtwórców może dochodzić roszczeń z tytułu naruszenia prawa autorskiego do całości utworu. Uzyskane świadczenie przypada wszystkim współtwórcom, stosownie do wielkości ich udziałów.
+\item Do autorskich praw majątkowych przysługujących współtwórcom stosuje się odpowiednio przepisy Kodeksu cywilnego o współwłasności w częściach ułamkowych.
+\end{enumerate}
+Programy pisze się raczej zbiorowo, i w takim przypadku dotyczą ich przepisy o utworach współautorskich.
+\end{document}
